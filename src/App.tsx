@@ -22,7 +22,7 @@ function App() {
         <Icon svg={ClipIcon} className="fill-green-base"/>
         <Icon svg={PencilIcon} className="fill-green-base"/>
         <Icon svg={PlusIcon} className="fill-green-base"/>
-        <Icon svg={SpinnigIcon} className="fill-green-base"/>
+        <Icon svg={SpinnigIcon} animate className="fill-green-base"/>
         <Icon svg={TrashIcon} className="fill-green-base"/>
         <Icon svg={XIcon} className="fill-green-base"/>
 
