@@ -7,6 +7,7 @@ import SpinnigIcon from "./assets/icons/spinning.svg?react"
 import TrashIcon from "./assets/icons/trash.svg?react"
 import XIcon from "./assets/icons/x-regular.svg?react"
 import Icon from "./components/icons"
+import Badge from "./components/badge"
 
 function App() {
 
@@ -26,6 +27,11 @@ function App() {
         <Icon svg={TrashIcon} className="fill-green-base"/>
         <Icon svg={XIcon} className="fill-green-base"/>
 
+      </div>
+
+      <div>
+        <Badge variant={"secondary"}>5</Badge>
+        <Badge variant={"primary"}>2 de 5</Badge>
       </div>
     </div>
   )
