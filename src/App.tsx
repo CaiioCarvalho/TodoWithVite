@@ -9,6 +9,7 @@ import XIcon from "./assets/icons/x-regular.svg?react"
 import Icon from "./components/icon"
 import Badge from "./components/badge"
 import Button from "./components/button"
+import IconButton from "./components/icon-button"
 
 function App() {
 
@@ -37,6 +38,12 @@ function App() {
 
       <div>
         <Button icon={PlusIcon}>Nova tarefa</Button>
+      </div>
+
+      <div className="grid gap-3">
+        <IconButton icon={TrashIcon} variant="primary"/>
+        <IconButton icon={TrashIcon} variant="secondary"/>
+        <IconButton icon={TrashIcon} variant="tertiary"/>
       </div>
     </div>
   )
