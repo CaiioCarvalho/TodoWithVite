@@ -11,11 +11,12 @@ import Badge from "./components/badge"
 import Button from "./components/button"
 import IconButton from "./components/icon-button"
 import InputText from "./components/input-text"
+import InputCheckbox from "./components/input-checkbox"
 
 function App() {
 
   return (
-    <div className="grid gap-3">
+    <div className="grid gap-3 p-8">
       <div>
         <Text variant={"body-md"}>Create a new element today</Text>
       <Text variant={"body-md-bold"}>Create a new element today</Text>
@@ -49,6 +50,10 @@ function App() {
 
       <div>
         <InputText />
+      </div>
+
+      <div>
+        <InputCheckbox />
       </div>
     </div>
   )
