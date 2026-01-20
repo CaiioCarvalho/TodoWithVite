@@ -12,6 +12,7 @@ import Button from "./components/button"
 import IconButton from "./components/icon-button"
 import InputText from "./components/input-text"
 import InputCheckbox from "./components/input-checkbox"
+import Card from "./components/card"
 
 function App() {
 
@@ -54,6 +55,14 @@ function App() {
 
       <div>
         <InputCheckbox />
+      </div>
+
+      <div>
+        <Card size="md" className="flex align">
+          <InputCheckbox />
+          <InputText />
+          <IconButton icon={TrashIcon} variant="primary"/>
+        </Card>
       </div>
     </div>
   )
