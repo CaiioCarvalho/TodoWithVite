@@ -13,11 +13,13 @@ import IconButton from "./components/icon-button"
 import InputText from "./components/input-text"
 import InputCheckbox from "./components/input-checkbox"
 import Card from "./components/card"
+import Container from "./components/container"
 
 function App() {
 
   return (
-    <div className="grid gap-3 p-8">
+    <Container>
+      <div className="grid gap-3 p-8">
       <div>
         <Text variant={"body-md"}>Create a new element today</Text>
       <Text variant={"body-md-bold"}>Create a new element today</Text>
@@ -58,13 +60,14 @@ function App() {
       </div>
 
       <div>
-        <Card size="md" className="flex align">
+        <Card size="md" className="flex justify-between gap-6">
           <InputCheckbox />
-          <InputText />
+          <InputText className="flex-1" />
           <IconButton icon={TrashIcon} variant="primary"/>
         </Card>
       </div>
     </div>
+    </Container>
   )
 }
 
